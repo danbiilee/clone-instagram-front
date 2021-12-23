@@ -1,0 +1,18 @@
+.tab {
+  @apply flex-1 flex justify-center items-center py-6 cursor-pointer;
+}
+
+.button {
+  @apply flex justify-center items-center;
+}
+
+.selected {
+  border-bottom: 2px solid var(--black);
+  svg {
+    color: var(--black);
+  }
+}
+
+.title {
+  @apply ml-3;
+}
