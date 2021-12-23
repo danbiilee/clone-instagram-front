@@ -1,0 +1,28 @@
+.button {
+  @apply flex justify-center items-center rounded-md;
+  &:not(.inactive) * {
+    @apply cursor-pointer;
+  }
+}
+
+.filled {
+  background-color: var(--blue);
+  &.inactive {
+    background-color: var(--blue-inactive);
+    cursor: default;
+  }
+}
+
+.outlined {
+  border: 1px solid var(--gray-300);
+}
+
+// Size
+.sm {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.lg {
+  width: 26.8rem;
+  height: 3.2rem;
+}
