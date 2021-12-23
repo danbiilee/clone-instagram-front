@@ -1,0 +1,34 @@
+.icon {
+  @apply inline-block cursor-pointer;
+  width: 2.4rem;
+  height: 2.4rem;
+  * {
+    @apply cursor-pointer;
+  }
+}
+
+.facebook {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: var(--white);
+}
+
+.add-intro {
+  width: 2rem;
+  height: 2rem;
+}
+
+.tab-listed,
+.tab-saved,
+.tab-tagged {
+  width: 2.6rem;
+  height: 2.6rem;
+  color: var(--gray-400);
+}
+
+.thumbnail {
+  @apply rounded-full;
+  &.lg {
+    min-width: 10rem;
+  }
+}
