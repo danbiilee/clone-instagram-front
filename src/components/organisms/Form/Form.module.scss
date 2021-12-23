@@ -1,0 +1,14 @@
+.login {
+  @apply flex flex-col items-end;
+}
+
+.inputs input {
+  @apply mb-3;
+  &:last-of-type {
+    @apply mb-5;
+  }
+}
+
+.findPassword {
+  @apply mb-9;
+}
