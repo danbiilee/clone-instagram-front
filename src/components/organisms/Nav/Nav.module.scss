@@ -1,0 +1,10 @@
+.nav {
+  @apply flex-1 flex justify-end;
+  button {
+    @apply mr-9;
+  }
+}
+
+.buttons {
+  @apply flex items-center justify-center ml-9;
+}
