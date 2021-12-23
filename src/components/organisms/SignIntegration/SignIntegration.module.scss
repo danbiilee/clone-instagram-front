@@ -1,0 +1,15 @@
+.divider {
+  @apply flex items-center justify-center my-6;
+}
+
+.line {
+  @apply flex-1;
+  height: 1px;
+  background-color: var(--gray-300);
+  &:first-of-type {
+    @apply mr-9;
+  }
+  &:last-of-type {
+    @apply ml-9;
+  }
+}
