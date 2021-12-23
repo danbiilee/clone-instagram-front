@@ -1,0 +1,11 @@
+.wrapper {
+  @apply flex h-full;
+}
+
+.login {
+  @apply flex-1 flex flex-col justify-center items-center;
+}
+
+.main {
+  @apply mt-24 mb-28;
+}
