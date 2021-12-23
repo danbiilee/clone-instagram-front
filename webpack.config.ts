@@ -86,7 +86,7 @@ const config: Configuration = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: isDevelopment ? '[name].js' : '[name].[contenthash].js',
-    assetModuleFilename: 'assets/[name].[contenthash][ext]',
+    assetModuleFilename: isDevelopment ? 'assets/[name][ext]' : 'assets/[name].[contenthash][ext]',
     clean: true,
   },
   resolve: {
