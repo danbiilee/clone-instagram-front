@@ -1,0 +1,4 @@
+.tabs {
+  @apply flex justify-around;
+  border-top: 1px solid var(--gray-300);
+}
