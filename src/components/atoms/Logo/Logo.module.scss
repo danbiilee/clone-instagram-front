@@ -1,0 +1,23 @@
+.logo {
+  @apply bg-no-repeat;
+  background-image: url(../../../assets/images/sprite-core.png);
+  text-indent: 999rem;
+}
+
+.accounts {
+  width: 175px;
+  height: 51px;
+  background-position: 0 -130px;
+}
+
+.main {
+  width: 103px;
+  height: 29px;
+  background-position: -122px -226px;
+}
+
+.meta {
+  width: 79px;
+  height: 24px;
+  object-fit: contain;
+}
