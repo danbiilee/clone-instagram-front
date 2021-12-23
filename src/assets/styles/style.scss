@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import './_theme.scss';
 
 @layer base {
   @font-face {
@@ -38,10 +39,29 @@
     src: url('../fonts/NotoSansKR-Black.woff2') format('woff2'), url('../fonts/NotoSansKR-Black.woff') format('woff'),
       url('../fonts/NotoSansKR-Black.otf') format('opentype');
   }
-  }
-}
 
-#app {
-  @apply h-screen;
-  font-family: 'Noto Sans KR';
+  html {
+    font-size: 62.5%;
+  }
+
+  a,
+  svg {
+    @apply inline-block;
+  }
+
+  li {
+    @apply list-none;
+  }
+
+  button,
+  button * {
+    @apply cursor-pointer;
+  }
+
+  #app {
+    @apply overflow-x-hidden overflow-y-auto h-screen font-normal;
+    color: var(--black);
+    font-family: 'Noto Sans KR';
+    font-size: 1.4rem;
+  }
 }
