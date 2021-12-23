@@ -1,0 +1,6 @@
+.wallpaper {
+  @apply hidden justify-center items-end pb-16 bg-cover;
+  @apply md:flex;
+  flex: 0 1 35%;
+  background-image: url(../../../assets/images/instagram-wallpaper.jpg);
+}
