@@ -1,0 +1,14 @@
+.profile {
+  @apply flex flex-col h-full;
+}
+
+.main {
+  @apply flex-1 flex flex-col pb-12;
+  @apply md:items-center;
+  background-color: var(--gray-200);
+}
+
+.posts {
+  flex: 1;
+  @apply md:w-4/5;
+}
