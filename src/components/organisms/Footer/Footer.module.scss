@@ -1,0 +1,5 @@
+.footer {
+  @apply flex justify-center pt-9 pb-28;
+  background-color: var(--gray-200);
+  border-top: 1px dotted var(--gray-300);
+}
