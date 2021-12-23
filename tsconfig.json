@@ -17,13 +17,12 @@
     "moduleResolution": "Node",
     "baseUrl": ".",
     "paths": {
-      "@hooks/*": ["src/hooks/*"],
       "@components/*": ["src/components/*"],
-      "@layouts/*": ["src/layouts/*"],
       "@pages/*": ["src/pages/*"],
-      "@utils/*": ["src/utils/*"],
-      "@types/*": ["src/types/*"],
-      "@assets/*": ["src/assets/*"]
+      "@hooks/*": ["src/hooks/*"],
+      "@customUtils/*": ["src/utils/*"],
+      "@customTypes/*": ["src/types/*"],
+      "@images/*": ["src/assets/images/*"]
     },
     "esModuleInterop": true,
     "skipLibCheck": true,

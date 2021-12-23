@@ -13,7 +13,10 @@ interface Configuration extends WebpackConfiguration {
 const isDevelopment = process.env['NODE_ENV'] !== 'production';
 
 const config: Configuration = {
-  name: 'setup-test',
+  name: 'setup',
+  entry: {
+    app: './src/index.tsx',
+  },
   mode: isDevelopment ? 'development' : 'production',
   devtool: isDevelopment ? 'hidden-source-map' : 'eval',
   devServer: {
@@ -27,21 +30,6 @@ const config: Configuration = {
     //     changeOrigins: true,
     //   }
     // }
-  },
-  entry: {
-    app: './src/index.tsx',
-  },
-  resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
-    alias: {
-      '@hooks': path.resolve(__dirname, 'src/hooks'),
-      '@components': path.resolve(__dirname, 'src/components'),
-      '@layouts': path.resolve(__dirname, 'src/layouts'),
-      '@pages': path.resolve(__dirname, 'src/pages'),
-      '@utils': path.resolve(__dirname, 'src/utils'),
-      '@types': path.resolve(__dirname, 'src/types'),
-      '@assets': path.resolve(__dirname, 'src/assets'),
-    },
   },
   module: {
     rules: [
@@ -100,6 +88,17 @@ const config: Configuration = {
     filename: isDevelopment ? '[name].js' : '[name].[contenthash].js',
     assetModuleFilename: 'assets/[name].[contenthash][ext]',
     clean: true,
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
+    alias: {
+      '@components': path.resolve(__dirname, 'src/components'),
+      '@pages': path.resolve(__dirname, 'src/pages'),
+      '@hooks': path.resolve(__dirname, 'src/hooks'),
+      '@customUtils': path.resolve(__dirname, 'src/utils'),
+      '@customTypes': path.resolve(__dirname, 'src/types'),
+      '@images': path.resolve(__dirname, 'src/assets/images'),
+    },
   },
 };
 
