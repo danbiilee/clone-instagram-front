@@ -4,7 +4,7 @@ import Logo from '@components/atoms/Logo';
 
 const ToMain = () => {
   return (
-    <Link to="/login">
+    <Link to="/profile">
       <Logo />
     </Link>
   );
