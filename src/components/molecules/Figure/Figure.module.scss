@@ -1,9 +1,14 @@
 .figure {
-  @apply flex flex-col-reverse items-center mr-16;
+  @apply flex-1 flex flex-col-reverse items-center;
   @apply md:flex-row;
-  width: 7rem;
 }
 
-.cnt {
-  @apply md:ml-3;
+@media (min-width: 768px) {
+  .title {
+    font-size: 1.4rem;
+  }
+  .cnt {
+    @apply md:ml-3;
+    font-size: 2rem;
+  }
 }
