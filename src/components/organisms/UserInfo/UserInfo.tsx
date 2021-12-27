@@ -15,7 +15,7 @@ const UserInfo = () => {
         <EditThumbnail />
         <div className={styles.mainInfo}>
           <h2 className={styles.id}>
-            <Text size="xl2" weight="black">
+            <Text className={styles.title} size="xl2" weight="black">
               null_un_defined
             </Text>
           </h2>
