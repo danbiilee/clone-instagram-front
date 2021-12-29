@@ -2,7 +2,7 @@
 
 .button {
   @include flex-center;
-  height: $form-el-height;
+  height: $button-height;
   padding: 0 $gap-sm;
   border-radius: $form-el-radius;
 }
