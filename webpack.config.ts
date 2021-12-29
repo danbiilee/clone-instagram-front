@@ -97,7 +97,7 @@ const config: Configuration = {
       '@hooks': path.resolve(__dirname, 'src/hooks'),
       '@customUtils': path.resolve(__dirname, 'src/utils'),
       '@customTypes': path.resolve(__dirname, 'src/types'),
-      '@images': path.resolve(__dirname, 'src/assets/images'),
+      '@assets': path.resolve(__dirname, 'src/assets'),
     },
   },
 };

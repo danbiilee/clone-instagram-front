@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Logo.module.scss';
-import Img from '@images/logo-meta.png';
+import Img from '@assets/images/logo-meta.png';
 
 const Meta = () => {
   return <img className={styles.meta} src={Img} alt="from meta" />;

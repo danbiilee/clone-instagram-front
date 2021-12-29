@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from '@images/thumbnail.jpg';
+import Img from '@assets/images/thumbnail.jpg';
 import { ThumbSize } from '../atom';
 import styles from './Icon.module.scss';
 

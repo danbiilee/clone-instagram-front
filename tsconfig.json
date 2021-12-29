@@ -22,7 +22,7 @@
       "@hooks/*": ["src/hooks/*"],
       "@customUtils/*": ["src/utils/*"],
       "@customTypes/*": ["src/types/*"],
-      "@images/*": ["src/assets/images/*"]
+      "@assets/*": ["src/assets/*"]
     },
     "esModuleInterop": true,
     "skipLibCheck": true,

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Icon.module.scss';
-import Defs from '@images/svg-defs.svg';
+import Defs from '@assets/images/svg-defs.svg';
 import { IconType } from '../atom';
 
 interface IconProps {

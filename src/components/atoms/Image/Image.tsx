@@ -1,5 +1,5 @@
 import React from 'react';
-import TestImage from '@images/test.png';
+import TestImage from '@assets/images/test.png';
 import styles from './Image.module.scss';
 
 const Image = () => {
