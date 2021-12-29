@@ -1,28 +1,24 @@
+@import '@assets/styles/variables', '@assets/styles/mixins';
+
 .button {
-  @apply flex justify-center items-center rounded-md;
-  &:not(.inactive) * {
-    @apply cursor-pointer;
-  }
+  @include flex-center;
+  height: $button-height;
+  padding: 0 $gap-sm;
+  border-radius: $button-radius;
+}
+
+.wide {
+  width: $button-width-wide;
 }
 
 .filled {
-  background-color: var(--blue);
+  background-color: $blue;
   &.inactive {
-    background-color: var(--blue-inactive);
+    background-color: $blue-inactive;
     cursor: default;
   }
 }
 
 .outlined {
-  border: 1px solid var(--gray-300);
-}
-
-// Size
-.sm {
-  width: 3.2rem;
-  height: 3.2rem;
-}
-.lg {
-  width: 26.8rem;
-  height: 3.2rem;
+  border: 1px solid $gray-300;
 }

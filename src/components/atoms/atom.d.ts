@@ -7,7 +7,6 @@ export type Color = 'white' | 'gray-200' | 'gray-300' | 'gray-400' | 'gray-500' 
 
 // Button
 export type ButtonType = 'button' | 'submit' | 'reset';
-export type ButtonSize = 'sm' | 'lg';
 
 // Icon
 export type IconType =

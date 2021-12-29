@@ -1,13 +1,16 @@
 import React from 'react';
 import styles from './Button.module.scss';
-import { ButtonType, ButtonSize } from '../atom';
+import classNames from 'classnames/bind';
+import { ButtonType } from '../atom';
 
+const cx = classNames.bind(styles);
 interface ButtonProps {
-  size?: ButtonSize;
-  filled?: boolean;
-  outlined?: boolean;
-  inactive?: boolean;
   type: ButtonType;
+  filled?: boolean;
+  inactive?: boolean;
+  outlined?: boolean;
+  wide?: boolean;
+  className?: string;
   children: React.ReactNode;
 }
 
@@ -17,14 +20,16 @@ const Button: React.FC<ButtonProps> = ({ type, children, ...props }) => {
       return;
     }
 
-    let result = styles.button;
+    let result: string[] = [];
+
     for (let key of Object.keys(props)) {
       const value = props[key as keyof Omit<ButtonProps, 'type' | 'children'>];
-      if (typeof value === 'boolean' && value) {
-        result += ` ${styles[key]}`;
+      if (key === 'className' && value) {
+        result.push(value as string);
+        continue;
       }
-      if (typeof value === 'string') {
-        result += ` ${styles[value]}`;
+      if (value) {
+        result.push(key);
       }
     }
 
@@ -32,7 +37,7 @@ const Button: React.FC<ButtonProps> = ({ type, children, ...props }) => {
   };
 
   return (
-    <button type={type} className={getClassNames()} disabled={true}>
+    <button type={type} className={cx('button', getClassNames())}>
       {children}
     </button>
   );
