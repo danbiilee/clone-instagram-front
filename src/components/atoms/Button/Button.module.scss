@@ -2,13 +2,13 @@
 
 .button {
   @include flex-center;
-  height: $button-height;
+  height: $form-el-height;
   padding: 0 $gap-sm;
-  border-radius: $button-radius;
+  border-radius: $form-el-radius;
 }
 
 .wide {
-  width: $button-width-wide;
+  width: $form-el-width;
 }
 
 .filled {
