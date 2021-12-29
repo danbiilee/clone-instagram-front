@@ -4,7 +4,7 @@ import Icon from '@components/atoms/Icon';
 
 const OpenSettingPopOver = () => {
   return (
-    <Button type="button" size="sm" outlined={true}>
+    <Button type="button" outlined={true}>
       <Icon id="setting" />
     </Button>
   );

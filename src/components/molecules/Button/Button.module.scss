@@ -1,3 +1,9 @@
-.add-intro {
-  @apply mr-3;
+@import '@assets/styles/variables';
+
+.intro {
+  margin-right: $gap-sm * 2;
+}
+
+.thumbnail {
+  height: fit-content;
 }

@@ -4,7 +4,7 @@ import Text from '@components/atoms/Text';
 
 const ToEditProfile = () => {
   return (
-    <Button type="button" size="lg" outlined={true}>
+    <Button type="button" outlined={true} wide={true}>
       <Text>프로필 편집</Text>
     </Button>
   );

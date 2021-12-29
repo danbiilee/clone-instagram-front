@@ -7,7 +7,7 @@ import styles from './Button.module.scss';
 const AddIntroduction = () => {
   return (
     <Button type="button">
-      <Icon id="add-intro" className={styles['add-intro']} />
+      <Icon id="add-intro" className={styles.intro} />
       <Text size="sm" color="gray-400">
         소개를 추가하세요
       </Text>

@@ -4,7 +4,7 @@ import Text from '@components/atoms/Text';
 
 const Login = () => {
   return (
-    <Button type="submit" size="lg" filled={true} inactive={true}>
+    <Button type="submit" filled={true} inactive={true} wide={true}>
       <Text color="white" weight="medium">
         로그인
       </Text>

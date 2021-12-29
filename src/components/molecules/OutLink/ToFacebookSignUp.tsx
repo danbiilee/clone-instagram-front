@@ -6,7 +6,7 @@ import styles from './OutLink.module.scss';
 
 const ToFacebookSignUp = () => {
   return (
-    <Button type="button" size="lg" filled={true}>
+    <Button type="button" filled={true} wide={true}>
       <Icon id="facebook" className={styles.facebook} />
       <Text color="white" weight="medium">
         Facebook으로 가입하기
