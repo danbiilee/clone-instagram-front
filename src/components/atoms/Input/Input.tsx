@@ -4,6 +4,7 @@ import { InputType } from '../atom';
 
 interface InputProps {
   type: InputType;
+  name: string;
   placeholder?: string;
 }
 

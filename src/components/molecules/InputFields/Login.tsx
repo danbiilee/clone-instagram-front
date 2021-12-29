@@ -8,8 +8,8 @@ interface LoginProps {
 const Login: React.FC<LoginProps> = ({ className }) => {
   return (
     <div className={className}>
-      <Input type="text" placeholder="아이디 또는 이메일" />
-      <Input type="password" placeholder="비밀번호" />
+      <Input type="text" name="id" placeholder="아이디 또는 이메일" />
+      <Input type="password" name="password" placeholder="비밀번호" />
     </div>
   );
 };
