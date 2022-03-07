@@ -1,0 +1,8 @@
+@import '@assets/styles/variables';
+
+.signup > div {
+  margin-bottom: $gap-sm;
+  &:last-of-type {
+    margin-bottom: $gap-lg;
+  }
+}

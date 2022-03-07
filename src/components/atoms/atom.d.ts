@@ -17,7 +17,9 @@ export type IconType =
   | 'tab-listed'
   | 'tab-saved'
   | 'tab-tagged'
-  | 'search';
+  | 'search'
+  | 'valid'
+  | 'notValid';
 export type ThumbSize = 'sm' | 'lg';
 
 // Input

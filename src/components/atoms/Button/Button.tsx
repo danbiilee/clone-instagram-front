@@ -37,7 +37,7 @@ const Button: React.FC<ButtonProps> = ({ type, children, ...props }) => {
   };
 
   return (
-    <button type={type} className={cx('button', getClassNames())}>
+    <button type={type} className={cx('button', getClassNames())} disabled={props.inactive}>
       {children}
     </button>
   );

@@ -3,7 +3,7 @@
 .button {
   @include flex-center;
   height: $button-height;
-  padding: 0 $gap-sm;
+  padding: 0 $gap-xs;
   border-radius: $form-el-radius;
 }
 
@@ -15,7 +15,7 @@
   background-color: $blue;
   &.inactive {
     background-color: $blue-inactive;
-    cursor: default;
+    cursor: default !important;
   }
 }
 
